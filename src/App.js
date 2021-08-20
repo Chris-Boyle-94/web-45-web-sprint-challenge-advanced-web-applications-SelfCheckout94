@@ -29,7 +29,7 @@ function App() {
           </a>
         </header>
         <Switch>
-          <PrivateRoute path="/bubble" component={BubblePage} />
+          <PrivateRoute path="/bubbles" component={BubblePage} />
           <Route path="/login" component={Login} />
           <Route path="/" component={Login} />
         </Switch>

@@ -24,7 +24,7 @@ const Login = (props) => {
       .post("http://localhost:5000/api/login", userInfo)
       .then((res) => {
         localStorage.setItem("token", res.data.payload);
-        props.history.push("/bubble");
+        props.history.push("/bubbles");
       })
       .catch((err) => setError(err.response.data.error));
   };
